@@ -2,6 +2,7 @@
 <html lang="{{ config('app.locale') }}">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ Admin::title() }} @if($header) | {{ $header }}@endif</title>
     <!-- Tell the browser to be responsive to screen width -->
@@ -18,23 +19,25 @@
 
 </head>
 
-<body class="hold-transition {{config('admin.skin')}} {{join(' ', config('admin.layout'))}}">
-<div class="wrapper">
+<body class="app">
 
-    @include('admin::partials.header')
+    <div id="spinner"></div>
+    <div id="app">
+        <div class="main-wrapper" >
 
-    @include('admin::partials.sidebar')
+            @include('admin::partials.header')
 
-    <div class="content-wrapper" id="pjax-container">
-        <div id="app">
-        @yield('content')
+            @include('admin::partials.sidebar')
+
+            <div class="app-content" id="pjax-container">
+                @yield('content')               
+                {!! Admin::script() !!}
+            </div>
+
+            @include('admin::partials.footer')
+
         </div>
-        {!! Admin::script() !!}
     </div>
-
-    @include('admin::partials.footer')
-
-</div>
 
 <button id="totop" title="Go to top" style="display: none;"><i class="fa fa-angle-double-up"></i></button>
 

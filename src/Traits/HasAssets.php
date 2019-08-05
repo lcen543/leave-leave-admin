@@ -46,38 +46,43 @@ trait HasAssets
      * @var array
      */
     public static $baseCss = [
-        'vendor/leave-admin/AdminLTE/bootstrap/css/bootstrap.min.css',
-        'vendor/leave-admin/font-awesome/css/font-awesome.min.css',
-        'vendor/leave-admin/leave-admin/leave-admin.css',
-        'vendor/leave-admin/nprogress/nprogress.css',
-        'vendor/leave-admin/sweetalert2/dist/sweetalert2.css',
-        'vendor/leave-admin/nestable/nestable.css',
-        'vendor/leave-admin/toastr/build/toastr.min.css',
-        'vendor/leave-admin/bootstrap3-editable/css/bootstrap-editable.css',
-        'vendor/leave-admin/google-fonts/fonts.css',
-        'vendor/leave-admin/AdminLTE/dist/css/AdminLTE.min.css',
+        'vendor/leave-admin/bootstrap/css/bootstrap.min.css',
+        'vendor/leave-admin/AdminLeave/css/icons.css',
+        'vendor/leave-admin/AdminLeave/css/style.css',        
+        'vendor/leave-admin/AdminLeave/css/scroll-bar/jquery.mCustomScrollbar.css',
+        'vendor/leave-admin/toggle-menu/sidemenu.css',
+        'vendor/leave-admin/chartist/chartist.css',
+        'vendor/leave-admin/chartist/chartist-plugin-tooltip.css',
+        'vendor/leave-admin/fullcalendar/stylesheet1.css',
+        'vendor/leave-admin/fullcalendar/morris/morris.css',
     ];
 
     /**
      * @var array
      */
     public static $baseJs = [
-        'vendor/leave-admin/AdminLTE/bootstrap/js/bootstrap.min.js',
-        'vendor/leave-admin/AdminLTE/plugins/slimScroll/jquery.slimscroll.min.js',
-        'vendor/leave-admin/AdminLTE/dist/js/app.min.js',
-        'vendor/leave-admin/jquery-pjax/jquery.pjax.js',
-        'vendor/leave-admin/nprogress/nprogress.js',
-        'vendor/leave-admin/nestable/jquery.nestable.js',
-        'vendor/leave-admin/toastr/build/toastr.min.js',
-        'vendor/leave-admin/bootstrap3-editable/js/bootstrap-editable.min.js',
-        'vendor/leave-admin/sweetalert2/dist/sweetalert2.min.js',
-        'vendor/leave-admin/leave-admin/leave-admin.js',
+        'vendor/leave-admin/AdminLeave/js/jquery.min.js',
+        'vendor/leave-admin/AdminLeave/js/popper.js',
+        'vendor/leave-admin/AdminLeave/js/tooltip.js',
+        'vendor/leave-admin/bootstrap/js/bootstrap.min.js',
+        'vendor/leave-admin/nicescroll/jquery.nicescroll.min.js',
+        'vendor/leave-admin/scroll-up-bar/dist/scroll-up-bar.min.js',
+        'vendor/leave-admin/toggle-menu/sidemenu.js',
+        'vendor/leave-admin/scroll-bar/jquery.mCustomScrollbar.concat.min.js',
+        'vendor/leave-admin/echarts/dist/echarts.js',
+        'vendor/leave-admin/fullcalendar/calendar.min.js',
+        'vendor/leave-admin/fullcalendar/custom_calendar.js',
+        'vendor/leave-admin/morris/morris.min.js',
+        'vendor/leave-admin/morris/raphael.min.js',
+        'vendor/leave-admin/AdminLeave/js/scripts.js',
+        'vendor/leave-admin/AdminLeave/js/dashboard.js',
+        'vendor/leave-admin/AdminLeave/js/apexcharts.js',
     ];
 
     /**
      * @var string
      */
-    public static $jQuery = 'vendor/leave-admin/AdminLTE/plugins/jQuery/jQuery-2.1.4.min.js';
+    public static $jQuery = 'vendor/leave-admin/AdminLeave/js/jquery.min.js';
 
     /**
      * Add css or get all css.

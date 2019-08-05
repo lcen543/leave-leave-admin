@@ -1,11 +1,11 @@
 @extends('admin::index', ['header' => $header])
 
 @section('content')
-    <section class="content-header">
-        <h1>
-            {{ $header ?: trans('admin.title') }}
-            <small>{{ $description ?: trans('admin.description') }}</small>
-        </h1>
+    <section class="section">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">{{ $header ?: trans('admin.title') }}</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ $description ?: trans('admin.description') }}</li>
+        </ol>
 
         <!-- breadcrumb start -->
         @if ($breadcrumb)
@@ -44,15 +44,16 @@
 
         <!-- breadcrumb end -->
 
-    </section>
+    
 
-    <section class="content">
+        <div class="section-body">
 
-        @include('admin::partials.alerts')
-        @include('admin::partials.exception')
-        @include('admin::partials.toastr')
+            @include('admin::partials.alerts')
+            @include('admin::partials.exception')
+            @include('admin::partials.toastr')
 
-        {!! $content !!}
+            {!! $content !!}
 
+        </div>
     </section>
 @endsection
